@@ -1,0 +1,50 @@
+/* ROOT */
+:root{
+    /* --main-font-family: "Roboto", "Arial", sans-serif; */
+    --main-font-weight: 400;
+    --main-body-bg-color: #202329;
+    /* --main-text-color: #333; */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+img{
+    display: block;
+    height: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-weight: var(--main-font-weight);
+    background-color: var(--main-body-bg-color);
+}
+
+.container-costom{
+    max-width: 1268px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.site-main{
+    flex-grow: 1;
+}
+
+.rick-and-morty-title{
+    font-size: 90px;
+    color: #6ff941;
+}
+.loading-text{
+    color: #6ff941;
+}
