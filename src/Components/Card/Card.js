@@ -4,7 +4,7 @@ export const Card = ({image, name, status, species, origin,  location }) => {
     const lifeCharacters = new Map()
     lifeCharacters.set("Alive", <p className="card-life-info card-life-info-alive">{status} - {species}</p>)
     lifeCharacters.set("Dead", <p className="card-life-info card-life-info-dead">{status} - {species}</p>)
-    lifeCharacters.set("unknown ", <p className="card-life-info card-life-info-unknown">{status} - {species}</p>)
+    lifeCharacters.set("unknown" , <p className="card-life-info card-life-info-unknown">{status} - {species}</p>)
 
 
     return <>
