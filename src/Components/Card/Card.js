@@ -1,6 +1,7 @@
 import "./Card.css";
 
-export const Card = ({image, name, status, species, origin,  location }) => {
+
+export const Card = ({image, name, status, species, origin,  location, id}) => {
     const lifeCharacters = new Map()
     lifeCharacters.set("Alive", <p className="card-life-info card-life-info-alive">{status} - {species}</p>)
     lifeCharacters.set("Dead", <p className="card-life-info card-life-info-dead">{status} - {species}</p>)
@@ -21,7 +22,13 @@ export const Card = ({image, name, status, species, origin,  location }) => {
                     <a className="card-last-location d-inline-block mb-3" href={location?.url} target="blank">{location?.name}</a>
 
                     <p className="card-desc mb-1">First seen in:</p>
-                    <a className="card-last-location" href={origin?.url} target="blank">{origin?.name}</a>
+                    <a className="card-last-location " href={origin?.url} target="blank">{origin?.name}</a>
+
+                    <div className="mt-2">
+                        <button className="btn btn-outline-success" data-id={id}>
+                            More Info
+                        </button>
+                    </div>
                 </div>
             </div>
         </li>
