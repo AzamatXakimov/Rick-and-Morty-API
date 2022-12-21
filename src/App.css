@@ -48,3 +48,26 @@ body{
 .loading-text{
     color: #6ff941;
 }
+
+.pagination-list{
+    max-width: 500px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-active{
+    color: #6ff941;
+    text-decoration: none;
+}
+.page-active:hover{
+    color: #6ff941;
+}
+.search-input{
+    color: #6ff941;
+    background-color: #3c3e44;
+}
+.search-input:focus{
+    color: #6ff941;
+    background-color: #3c3e44;  
+    box-shadow: 0 0 0 0.25rem #6ff94190;
+}

@@ -15,14 +15,13 @@ export const Card = ({image, name, status, species, origin,  location }) => {
                     <h2 className="card-name mb-2">
                         {name}
                     </h2>
-                    {console.log(status)}
                     {lifeCharacters.get(status)}
 
                     <p className="card-desc mb-1">Last known location:</p>
-                    <a className="card-last-location d-inline-block mb-3" href={origin?.url} target="blank">{origin?.name}</a>
+                    <a className="card-last-location d-inline-block mb-3" href={location?.url} target="blank">{location?.name}</a>
 
                     <p className="card-desc mb-1">First seen in:</p>
-                    <a className="card-last-location" href={location?.url} target="blank">{location?.name}</a>
+                    <a className="card-last-location" href={origin?.url} target="blank">{origin?.name}</a>
                 </div>
             </div>
         </li>
