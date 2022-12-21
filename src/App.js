@@ -9,7 +9,9 @@ function App() {
       <div className='container-costom'>
         <h1 className="rick-and-morty-title mt-5 text-center">The Rick adn Morty</h1>
       </div>
-      <Home/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
     </>
 
   )
