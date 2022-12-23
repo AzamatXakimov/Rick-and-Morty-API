@@ -17,7 +17,7 @@ export const Home = () => {
     let InputRef = useRef();
 
 
-    let url = `https://rickandmortyapi.com/api/character/?page=${page}&name=${search}&status=${status}`
+    let url = `https://rickandmortyapi.com/api/character/?page=${page}&name=${search}&status=${status}&species=${species}&gender=${gender}`
     useEffect(() => {
         fetch(url)
         .then(res => res.json())
